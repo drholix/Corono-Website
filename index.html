@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+
+  <body>
+    <header class="header container">
+      <nav id="navbar">
+        <div class="navbar-container">
+          <div class="navbar-button">
+            <a href="#about">About</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </nav>
+      <div class="header__logo-box">
+        <span class="header_span1">Covid</span>
+        <span class="header_span2">19</span>
+      </div>
+      <div class="header__video">
+        <video
+          src="./assets/video/video_corona.mp4"
+          autoplay="true"
+          loop="true"
+          id="corona"
+        >
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="header-overlay"></div>
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">proggres</span>
+          <span class="heading-primary--sub">Is where life happens</span>
+        </h1>
+        <div class="header_speaker">
+          <img
+            src="./assets/speaker_on.svg"
+            alt="speker_on"
+            class="speaker_on"
+            id="speaker_on"
+          />
+          <img
+            src="./assets/speaker_off.svg"
+            alt="speker_on"
+            class="speaker_off"
+            id="speaker_off"
+          />
+        </div>
+        <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+      </div>
+      <div id="scroll_mouse">
+        <a href="#about"><span></span></a>
+      </div>
+    </header>
+    <div class="country_container">
+      <div class="country_warp">
+        <div class="country_top5">
+          <span class="top5">TOP 5</span>
+          <span class="infeksion">Confirmed Coronavirus Cases</span>
+        </div>
+        <div class="img-bendera">
+          <img src="./assets/gambar/us.png" alt="america-flag" />
+          <span id="angka-infeksi1" class="tulisan_infeksi">124.388 +</span>
+          <img src="./assets/gambar/italy.png" alt="italy-flag" />
+          <span id="angka-infeksi2" class="tulisan_infeksi">92.472 +</span>
+          <img src="./assets/gambar/china.png" alt="china-flag" />
+          <span id="angka-infeksi3" class="tulisan_infeksi">81.394 +</span>
+          <img src="./assets/gambar/spanyol.png" alt="spanyol-flag" />
+          <span id="angka-infeksi4" class="tulisan_infeksi">73.235 +</span>
+          <img src="./assets/gambar/germany.png" alt="germany-flag" />
+          <span id="angka-infeksi5" class="tulisan_infeksi">73.235 +</span>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+      <div class="container-about">
+        <article id="about">
+          <div class="image-about">
+            <img src="./assets/gambar/Coronavirus1.png" alt="Coronavirus" />
+          </div>
+          <div class="tulisan">
+            <span class="span_about">About</span>
+            <input type="checkbox" class="read-more-state" id="post-1" />
+            <p class="read-more-wrap">
+              Coronavirus disease (COVID-19) is an infectious disease caused by
+              a newly discovered coronavirus. Most people infected with the
+              COVID-19 virus will experience mild to moderate respiratory
+              illness and recover without requiring special treatment. Older
+              people, and those with underlying medical problems like
+              cardiovascular disease, diabetes, chronic respiratory disease, and
+              cancer are more likely to develop serious illness.
+              <span class="read-more-target"
+                >The best way to prevent and slow down transmission is be well
+                informed about the COVID-19 virus, the disease it causes and how
+                it spreads. Protect yourself and others from infection by
+                washing your hands or using an alcohol based rub frequently and
+                not touching your face. The COVID-19 virus spreads primarily
+                through droplets of saliva or discharge from the nose when an
+                infected person coughs or sneezes, so it’s important that you
+                also practice respiratory etiquette (for example, by coughing
+                into a flexed elbow). At this time, there are no specific
+                vaccines or treatments for COVID-19. However, there are many
+                ongoing clinical trials evaluating potential treatments. WHO
+                will continue to provide updated information as soon as clinical
+                findings become available.</span
+              >
+            </p>
+            <label for="post-1" class="read-more-trigger"></label>
+          </div>
+        </article>
+      </div>
+      <div class="container-content">
+        <article id="news1" class="card">
+          <h2>Global update on coronavirus disease</h2>
+          <p>
+            As of 27 March 2020, a total of 509 164 confirmed cases have been
+            reported for coronavirus disease (COVID-19) globally. Among these,
+            there have been 23 335 deaths reported related to COVID-19. Two new
+            countries/territories/areas have reported positive cases of COVID-19
+            in the past 24 hours.
+          </p>
+        </article>
+      </div>
+    </main>
+
+    <script src="./assets/index.js"></script>
+  </body>
+</html>
