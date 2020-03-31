@@ -30,13 +30,6 @@ body::-webkit-scrollbar {
   /* Safari and Chrome */
 }
 
-/* .header__video {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    z-index: 0;
-} */
-
 .header {
   height: 100vh;
   display: flex;
@@ -59,6 +52,79 @@ body::-webkit-scrollbar {
   left: 0;
   right: 0;
 }
+/*  nav satu lagi */
+#myNav {
+  display: none;
+}
+
+#span-nav {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 3rem;
+}
+
+#span-nav {
+  font-size: 3.8rem;
+  display: none;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {
+    overflow-y: auto;
+  }
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+/*  nav satu lagi */
 
 .navbar-container {
   max-width: 120rem;
@@ -318,7 +384,6 @@ body::-webkit-scrollbar {
 }
 
 .country_warp {
-  max-width: 120rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -470,7 +535,7 @@ body::-webkit-scrollbar {
   text-decoration: underline;
 }
 
-.box:hover {
+.box:hover.sub-title-box:hover {
   text-decoration: none;
   box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.4);
 }
@@ -532,7 +597,13 @@ aside {
   justify-content: center;
   padding: 1.2rem 0;
 }
-
+.profile h3 {
+  padding-bottom: 2rem;
+}
+.profile th,
+td {
+  padding: 0.5rem 0;
+}
 footer {
   padding: 20px;
   color: white;
@@ -540,4 +611,16 @@ footer {
   text-align: center;
   font-weight: bold;
   font-size: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #navbar a {
+    display: none;
+  }
+  #myNav {
+    display: unset;
+  }
+  #span-nav {
+    display: unset;
+  }
 }
