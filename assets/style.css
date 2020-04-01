@@ -111,7 +111,7 @@ body::-webkit-scrollbar {
   font-size: 60px;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 500px) {
   .overlay {
     overflow-y: auto;
   }
@@ -136,7 +136,7 @@ body::-webkit-scrollbar {
   text-decoration: none;
   padding: 0 2rem;
   color: white;
-  font-size: 2rem;
+  font-size: 2.4rem;
   text-shadow: 2px 2px 8px #000000;
 }
 
@@ -145,7 +145,7 @@ body::-webkit-scrollbar {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -155,8 +155,8 @@ body::-webkit-scrollbar {
 }
 
 .header-overlay {
-  height: 100vh;
-  width: 100vw;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -376,10 +376,9 @@ body::-webkit-scrollbar {
 
 .country_container {
   width: 100%;
-  margin: 0 auto;
+  margin: 1.2rem auto;
   display: flex;
   justify-content: center;
-
   padding-bottom: 1rem;
 }
 
@@ -401,6 +400,10 @@ body::-webkit-scrollbar {
   font-size: 4rem;
   color: black;
 }
+.infeksion {
+  font-size: 2rem;
+  color: black;
+}
 
 .img-bendera {
   display: flex;
@@ -408,22 +411,30 @@ body::-webkit-scrollbar {
   padding-top: 20px;
 }
 
+@media only screen and (max-width: 600px) {
+  .img-bendera {
+    flex-direction: column;
+  }
+  .country_warp {
+    flex-direction: column;
+    height: 88vh;
+  }
+}
+
 .img-bendera img {
-  width: 9rem;
-  padding-left: 2rem;
+  width: 10rem;
+
   align-items: center;
   margin: 0 2rem;
-  margin-right: 3rem;
 }
 
 .tulisan_infeksi {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   color: black;
 }
 
 .container-about {
   width: 100%;
-  height: 68vh;
   /* background-color: #777; */
   background-image: linear-gradient(
       to right bottom,
@@ -441,9 +452,10 @@ body::-webkit-scrollbar {
 #about {
   display: flex;
 }
+
 .tulisan {
   color: white;
-  padding-top: 1.2rem;
+  padding-top: 3.2rem;
 }
 
 .span_about {
@@ -452,9 +464,10 @@ body::-webkit-scrollbar {
 
 .tulisan p {
   padding-top: 1rem;
+  padding-right: 5rem;
   font-size: 1.65rem;
   font-weight: 400;
-  width: 80%;
+  width: 100%;
 }
 
 .read-more-state {
@@ -499,13 +512,12 @@ body::-webkit-scrollbar {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 20px;
-  margin-top: 15rem;
+  margin-top: 11rem;
 }
 
 .container-content {
   display: flex;
-  padding-left: 20px;
-  height: 258vh;
+  padding-left: 1.5rem;
   width: 100%;
   margin-bottom: 2rem;
 }
@@ -530,14 +542,26 @@ body::-webkit-scrollbar {
   cursor: pointer;
 }
 
-.box:hover,
+/* .box:hover,
 .sub-title-box:hover {
   text-decoration: underline;
 }
 
-.box:hover.sub-title-box:hover {
+.box:hover,
+.sub-title-box:hover {
   text-decoration: none;
   box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.4);
+} */
+main {
+  height: auto;
+}
+
+.box {
+  text-decoration: none;
+}
+
+.box:hover {
+  text-decoration: underline;
 }
 
 .title-box {
@@ -567,10 +591,10 @@ body::-webkit-scrollbar {
 }
 
 .embeded-youtube iframe {
-  width: 75%;
-  height: 70vh;
-  margin-left: 14rem;
-  margin-top: 4rem;
+  width: 100%;
+  height: 70rem;
+  margin-top: 2.5rem;
+  padding-bottom: 9rem;
 }
 
 .text2 {
@@ -605,6 +629,7 @@ td {
   padding: 0.5rem 0;
 }
 footer {
+  width: 100%;
   padding: 20px;
   color: white;
   background-color: #00a2c6;
@@ -612,7 +637,49 @@ footer {
   font-weight: bold;
   font-size: 2rem;
 }
+/* saya fokus ke arah screen ipad pro */
+@media only screen and (max-width: 1024px) {
+  .country_warp {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-bendera img {
+    margin: 0 1.35rem;
+  }
+  .img-bendera {
+    padding-right: 5px;
+  }
+  .header__video video {
+    width: unset;
+    height: 100%;
+    margin-left: -63rem;
+  }
+  .heading-primary--main {
+    font-size: 6rem;
+    letter-spacing: 3.25rem;
+  }
+  .heading-primary--sub {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+  }
+  .header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .embeded-youtube iframe {
+    height: 45rem;
+    padding-bottom: unset;
+  }
+  .image-about img {
+    width: 450px;
+  }
+}
+/* saya fokus ke arah screen ipad pro */
 
+/* saya fokus ke arah screen iphone 6/7/8 */
 @media only screen and (max-width: 600px) {
   #navbar a {
     display: none;
@@ -624,3 +691,133 @@ footer {
     display: unset;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .container-content {
+    flex-direction: column;
+    padding-right: 1.5rem;
+    margin-top: -7rem;
+  }
+  #news {
+    width: 100%;
+  }
+  .image-about img {
+    width: 60%;
+  }
+  #about {
+    display: flex;
+    flex-direction: column;
+  }
+  .image-about {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .tulisan {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    padding-top: unset;
+  }
+  .tulisan p {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+  p.read-more-wrap {
+    padding-right: unset;
+  }
+  .container-about {
+    height: 100%;
+    padding-bottom: 2rem;
+  }
+  .header__video video {
+    width: unset;
+    height: 100%;
+    margin-left: -39rem;
+  }
+  .heading-primary--main {
+    font-size: 3.7rem;
+    letter-spacing: 1.4rem;
+  }
+  .heading-primary--sub {
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;
+  }
+  .header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .btn:link,
+  .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1rem;
+  }
+  .speaker_on {
+    width: 2.45rem;
+  }
+  .speaker_off {
+    width: 2.64rem;
+    display: none;
+  }
+  #scroll_mouse a span {
+    position: absolute;
+    top: 86%;
+    left: 50%;
+    width: 3.56rem;
+    height: 60px;
+    margin-left: -15px;
+    border: 2px solid rgba(255, 255, 255, 0.664);
+    border-radius: 50px;
+  }
+  .country_container {
+    margin: 4.5rem auto;
+    width: 100%;
+  }
+  .box {
+    width: unset;
+    height: unset;
+  }
+  aside {
+    width: unset;
+    padding: unset;
+    margin-top: -8rem;
+    margin-bottom: 2.8rem;
+  }
+  footer {
+    /* position: absolute;
+    bottom: -590rem; */
+    padding: 20px;
+    color: white;
+    background-color: #00a2c6;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .news_h2 {
+    font-size: 3rem;
+  }
+  #news .text1 {
+    font-size: 2rem;
+  }
+  .news2_h2 {
+    font-size: 3rem;
+  }
+  .news3_h2 {
+    font-size: 2.8rem;
+  }
+  .embeded-youtube iframe {
+    height: 27rem;
+    padding-bottom: unset;
+  }
+}
+
+/* saya fokus ke arah screen iphone 6/7/8 */
