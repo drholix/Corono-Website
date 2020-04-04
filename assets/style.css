@@ -793,7 +793,7 @@ footer {
   .container-content {
     flex-direction: column;
     padding-right: 1.5rem;
-    margin-top: -7rem;
+    margin-top: -2rem;
   }
 
   #news {
@@ -888,7 +888,7 @@ footer {
   aside {
     width: unset;
     padding: unset;
-    margin-top: -8rem;
+    margin-top: -2.7rem;
     margin-bottom: 2.8rem;
   }
   footer {
