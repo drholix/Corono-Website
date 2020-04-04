@@ -11,6 +11,7 @@ html {
   font-size: 62.5%;
   overflow: scroll;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -62,9 +63,6 @@ body::-webkit-scrollbar {
   position: absolute;
   top: 0;
   right: 3rem;
-}
-
-#span-nav {
   font-size: 3.8rem;
   display: none;
 }
@@ -87,13 +85,13 @@ body::-webkit-scrollbar {
   top: 25%;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 3rem;
 }
 
 .overlay a {
-  padding: 8px;
+  padding: 0.8rem;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 3.6rem;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -106,9 +104,9 @@ body::-webkit-scrollbar {
 
 .overlay .closebtn {
   position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
+  top: 2rem;
+  right: 4.5rem;
+  font-size: 6rem;
 }
 
 @media screen and (max-height: 500px) {
@@ -116,12 +114,17 @@ body::-webkit-scrollbar {
     overflow-y: auto;
   }
   .overlay a {
-    font-size: 20px;
+    font-size: 2rem;
   }
   .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
+    font-size: 4rem;
+    top: 1.5rem;
+    right: 3.5rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  #span-nav {
+    display: none !important;
   }
 }
 /*  nav satu lagi */
@@ -137,7 +140,7 @@ body::-webkit-scrollbar {
   padding: 0 2rem;
   color: white;
   font-size: 2.4rem;
-  text-shadow: 2px 2px 8px #000000;
+  text-shadow: 0.2rem 0.2rem 0.8rem #000000;
 }
 
 .header__video {
@@ -169,7 +172,7 @@ body::-webkit-scrollbar {
   left: 4rem;
   z-index: 2;
   font-size: 2rem;
-  text-shadow: 2px 2px 3px #000000;
+  text-shadow: 0.2rem 0.2rem 0.3rem #000000;
 }
 .header_span1 {
   font-weight: bold;
@@ -205,9 +208,9 @@ body::-webkit-scrollbar {
 
 .heading-primary--sub {
   display: block;
-  font-size: 2rem;
+  font-size: 1.64rem;
   font-weight: 700;
-  letter-spacing: 1.74rem;
+  letter-spacing: 1.5rem;
   animation: moveInRight 1s ease-out;
 }
 
@@ -289,13 +292,13 @@ body::-webkit-scrollbar {
 }
 
 .btn:hover {
-  transform: translateY(-3px);
+  transform: translateY(-0.3rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   background-color: #fff;
 }
 
 .btn:active {
-  transform: translateY(-1px);
+  transform: translateY(-0.1rem);
 }
 
 .btn--white {
@@ -308,7 +311,7 @@ body::-webkit-scrollbar {
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 100px;
+  border-radius: 10rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -334,21 +337,21 @@ body::-webkit-scrollbar {
   position: absolute;
   top: 90%;
   left: 50%;
-  width: 37px;
-  height: 60px;
-  margin-left: -15px;
-  border: 2px solid rgba(255, 255, 255, 0.664);
-  border-radius: 50px;
+  width: 3.7rem;
+  height: 6rem;
+  margin-left: -1.5rem;
+  border: 0.2rem solid rgba(255, 255, 255, 0.664);
+  border-radius: 5rem;
 }
 
 #scroll_mouse a span::before {
   position: absolute;
-  top: 10px;
+  top: 1rem;
   left: 47%;
   content: "";
-  width: 10px;
-  height: 10px;
-  margin-left: -3px;
+  width: 1rem;
+  height: 1rem;
+  margin-left: -0.3rem;
   background-color: rgba(255, 255, 255, 0.664);
   border-radius: 100%;
   animation: mouse 2s infinite;
@@ -365,7 +368,7 @@ body::-webkit-scrollbar {
   }
 
   80% {
-    -webkit-transform: translate(0, 20px);
+    -webkit-transform: translate(0, 2rem);
     opacity: 0;
   }
 
@@ -408,28 +411,18 @@ body::-webkit-scrollbar {
 .img-bendera {
   display: flex;
   align-items: center;
-  padding-top: 20px;
-}
-
-@media only screen and (max-width: 600px) {
-  .img-bendera {
-    flex-direction: column;
-  }
-  .country_warp {
-    flex-direction: column;
-    height: 88vh;
-  }
+  padding-top: 2rem;
 }
 
 .img-bendera img {
   width: 10rem;
 
   align-items: center;
-  margin: 0 2rem;
+  margin: 0 3rem;
 }
 
 .tulisan_infeksi {
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   color: black;
 }
 
@@ -455,17 +448,17 @@ body::-webkit-scrollbar {
 
 .tulisan {
   color: white;
-  padding-top: 3.2rem;
+  padding-top: 3.5rem;
 }
 
 .span_about {
-  font-size: 5.3rem;
+  font-size: 5.5rem;
 }
 
 .tulisan p {
   padding-top: 1rem;
   padding-right: 5rem;
-  font-size: 1.65rem;
+  font-size: 2rem;
   font-weight: 400;
   width: 100%;
 }
@@ -502,17 +495,17 @@ body::-webkit-scrollbar {
   margin-top: 1.3rem;
   color: #666;
   line-height: 2;
-  border: 1px solid #ddd;
+  border: 0.1rem solid #ddd;
   border-radius: 0.25em;
   background-color: #fff;
   font-size: 1.52rem;
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  padding: 20px;
-  margin-top: 11rem;
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-top: 7rem;
 }
 
 .container-content {
@@ -526,7 +519,7 @@ body::-webkit-scrollbar {
 }
 .news_h2 {
   font-size: 5rem;
-  border-bottom: 1px solid rgba(119, 119, 119, 0.541);
+  border-bottom: 0.1rem solid rgba(119, 119, 119, 0.541);
 }
 #news .text1 {
   padding-top: 4rem;
@@ -534,24 +527,13 @@ body::-webkit-scrollbar {
 }
 
 .box {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
   margin-top: 4rem;
   width: 50%;
   height: 15%;
   cursor: pointer;
 }
-
-/* .box:hover,
-.sub-title-box:hover {
-  text-decoration: underline;
-}
-
-.box:hover,
-.sub-title-box:hover {
-  text-decoration: none;
-  box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.4);
-} */
 main {
   height: auto;
 }
@@ -562,6 +544,11 @@ main {
 
 .box:hover {
   text-decoration: underline;
+}
+
+.box a:link,
+.box a:visited {
+  color: black;
 }
 
 .title-box {
@@ -581,24 +568,29 @@ main {
 .news2_h2 {
   padding-top: 4rem;
   font-size: 5rem;
-  border-bottom: 1px solid rgba(119, 119, 119, 0.541);
+  border-bottom: 0.1rem solid rgba(119, 119, 119, 0.541);
 }
 
 .news3_h2 {
   padding-top: 3.5rem;
   font-size: 4rem;
-  border-bottom: 1px solid rgba(119, 119, 119, 0.541);
+  border-bottom: 0.1rem solid rgba(119, 119, 119, 0.541);
 }
 
-.embeded-youtube iframe {
-  width: 100%;
-  height: 70rem;
-  margin-top: 2.5rem;
-  padding-bottom: 9rem;
+.container-content iframe {
+  width: 80rem;
+  height: 60rem;
+  justify-content: center;
 }
 
 .text2 {
   font-size: 2.2rem;
+}
+.embeded-youtube iframe {
+  width: 100%;
+  height: 70rem;
+  margin-top: 2.5rem;
+  padding-bottom: 11rem;
 }
 
 aside {
@@ -614,6 +606,7 @@ aside {
 }
 .profile p {
   padding: 1.2rem 0;
+  text-align: center;
 }
 
 .profile figcaption {
@@ -621,33 +614,82 @@ aside {
   justify-content: center;
   padding: 1.2rem 0;
 }
+.profile h2 {
+  text-align: center;
+}
 .profile h3 {
-  padding-bottom: 2rem;
+  padding-bottom: 1.4rem;
+  text-align: center;
 }
 .profile th,
 td {
   padding: 0.5rem 0;
 }
+
+.biodata {
+  text-align: left;
+  width: 100%;
+}
+.biodata td,
+th {
+  width: 50%;
+  text-align: left;
+  font-size: 1.61rem;
+}
+.img-biodata {
+  text-align: center;
+  padding-top: 1.8rem;
+}
+.img-biodata a {
+  text-align: center;
+  padding: 0 2rem;
+}
+.img-biodata img {
+  width: 18%;
+  flex-wrap: wrap;
+}
+
 footer {
   width: 100%;
-  padding: 20px;
+  padding: 2rem;
   color: white;
   background-color: #00a2c6;
   text-align: center;
   font-weight: bold;
+  background-position: bottom;
   font-size: 2rem;
 }
-/* saya fokus ke arah screen ipad pro */
+@media only screen and (max-width: 768px) {
+  .img-bendera img {
+    width: 7%;
+  }
+  .card {
+    padding: 1rem;
+  }
+  aside {
+    width: 32%;
+  }
+  .box {
+    width: unset;
+    height: unset;
+  }
+}
+/*  screen ipad pro */
 @media only screen and (max-width: 1024px) {
+  .header_span1,
+  .header_span2 {
+    font-size: 3.5rem;
+  }
+
   .country_warp {
     display: flex;
     flex-direction: column;
   }
   .img-bendera img {
-    margin: 0 1.35rem;
+    margin: 1rem 1.35rem;
   }
   .img-bendera {
-    padding-right: 5px;
+    padding-right: 0.5rem;
   }
   .header__video video {
     width: unset;
@@ -669,40 +711,91 @@ footer {
     transform: translate(-50%, -50%);
     text-align: center;
   }
-  .embeded-youtube iframe {
-    height: 45rem;
-    padding-bottom: unset;
-  }
-  .image-about img {
-    width: 450px;
-  }
-}
-/* saya fokus ke arah screen ipad pro */
 
-/* saya fokus ke arah screen iphone 6/7/8 */
-@media only screen and (max-width: 600px) {
+  .image-about img {
+    width: 45rem;
+  }
+  .news_h2 {
+    font-size: 3.5rem;
+  }
+  .news2_h2 {
+    font-size: 3.5rem;
+  }
+  .news3_h2 {
+    font-size: 3.2rem;
+  }
+  .tulisan {
+    padding-bottom: 8rem;
+  }
   #navbar a {
     display: none;
   }
   #myNav {
     display: unset;
+    z-index: 4;
   }
   #span-nav {
-    display: unset;
+    display: block;
+    font-size: 5.6rem;
+  }
+  .span-nav-hide {
+    display: none;
+  }
+  .span-nav-on {
+    display: block;
+  }
+
+  .biodata {
+    text-align: left;
+    width: 100%;
+  }
+  .biodata td,
+  th {
+    width: 50%;
+    text-align: left;
+    font-size: 1.3rem;
+  }
+  .img-biodata {
+    text-align: center;
+    padding-top: 1.8rem;
+  }
+  .img-biodata a {
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .img-biodata img {
+    width: 17.5%;
+    flex-wrap: wrap;
+  }
+  footer {
+    margin-top: 4rem;
   }
 }
+/*  screen ipad pro */
+
+/*  screen iphone 6/7/8/10(x) */
 
 @media only screen and (max-width: 600px) {
+  .header_span1,
+  .header_span2 {
+    font-size: 1.9rem;
+  }
+  #span-nav {
+    font-size: 3.5rem;
+    padding-top: 0.6rem;
+  }
   .container-content {
     flex-direction: column;
     padding-right: 1.5rem;
     margin-top: -7rem;
   }
+
   #news {
     width: 100%;
   }
   .image-about img {
     width: 60%;
+    padding-top: 4rem;
   }
   #about {
     display: flex;
@@ -736,8 +829,8 @@ footer {
     margin-left: -39rem;
   }
   .heading-primary--main {
-    font-size: 3.7rem;
-    letter-spacing: 1.4rem;
+    font-size: 3.5rem;
+    letter-spacing: 1.2rem;
   }
   .heading-primary--sub {
     font-size: 1.2rem;
@@ -773,10 +866,10 @@ footer {
     top: 86%;
     left: 50%;
     width: 3.56rem;
-    height: 60px;
+    height: 6rem;
     margin-left: -15px;
-    border: 2px solid rgba(255, 255, 255, 0.664);
-    border-radius: 50px;
+    border: 0.2rem solid rgba(255, 255, 255, 0.664);
+    border-radius: 5rem;
   }
   .country_container {
     margin: 4.5rem auto;
@@ -793,11 +886,9 @@ footer {
     margin-bottom: 2.8rem;
   }
   footer {
-    /* position: absolute;
-    bottom: -590rem; */
     padding: 20px;
     color: white;
-    background-color: #00a2c6;
+    background-color: #c21010cc;
     text-align: center;
     font-weight: bold;
     font-size: 2rem;
@@ -818,6 +909,29 @@ footer {
     height: 27rem;
     padding-bottom: unset;
   }
+  .biodata table {
+    margin-left: 3.4rem;
+  }
+  /* #span-nav {
+    position: fixed;
+  } */
 }
 
-/* saya fokus ke arah screen iphone 6/7/8 */
+@media only screen and (max-width: 600px) {
+  .img-bendera {
+    flex-direction: column;
+  }
+  .img-bendera img {
+    width: 30%;
+  }
+  .country_warp {
+    flex-direction: column;
+    /* height: 88vh; */
+    height: 100%;
+  }
+  .img-bendera img span {
+    padding: 2rem;
+  }
+}
+
+/*  screen iphone 6/7/8 */
